@@ -1,0 +1,29 @@
+# Input file for profit.py
+a) ugc5251_g_xyfix.dat # Input table
+b) moffat # PSF type
+c)  1.     1.665  3.838 # PSF parameters
+c1)  0.1    0.167  0.384 # PSF parameters err
+d) 50.0 # Convolution box
+e) error # Weights for fitting
+1) sersic @ psf # Component type
+2) 20.0628098 0.0 +/- 0.09960 # Surface brightness at effective radius
+3) 2.3448347 0.0 +/- 0.02833 # Effective radius
+4) 0.2917780 0.0 +/- 0.01849 # Sersic index
+
+
+1) sersic @ bulge # Component type
+2) 21.5607801 0.0 +/- 0.08422 # Surface brightness at effective radius
+3) 7.0107889 0.0 +/- 0.17361 # Effective radius
+4) 0.4917201 0.0 +/- 0.03818 # Sersic index
+
+
+1) sersic @ arm # Component type
+2) 22.2178973 0.0 +/- 0.10020 # Surface brightness at effective radius
+3) 39.3264185 0.0 +/- 0.46592 # Effective radius
+4) 0.2334866 0.0 +/- 0.01860 # Sersic index
+
+
+1) exponential @ disk # Component type
+2) 21.4778119 0.0 +/- 0.19509 # Disc central SB
+3) 51.3021056 0.0 +/- 15.58554 # Disc scalelenght
+

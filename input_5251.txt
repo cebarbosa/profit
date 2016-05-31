@@ -1,0 +1,55 @@
+# Input file for profit.py
+a) ugc5251_g_xyfix.dat # Input table
+b) moffat # PSF type (only option available currently)
+c)  1.     1.6650		3.8383 # PSF parameters 
+d) 50. # Convolution box for PSF
+e) error # Weights for fitting. Option are error and none
+
+# The "@ something" is a commentary for ploting and is optional .
+# Errors are optional in the input file, but the program does not suppot 
+# errors only in part of the parameters; if you wish to use an output from 
+# the program for another fit including a new component, be aware that you 
+# should include errors (although errors are not used for the fitting.
+# Errors for a given model have to be computed after a model is choosen using
+# bootstrapping. 
+# The second number besides a component indicates whether the parameters is 
+# free for varying (0) or fixed (1). In the example all parameters are free.
+
+
+1) sersic @ psf # Component type
+2) 19.321 0.0 +/-  0.02 # Surface brightness at effective radius
+3) 1.9634 0.0 +/-  0.04 # Effective radius
+4) 0.052977 0.0 +/-  0.00 # Sersic index
+
+
+1) sersic @ bulge # Component type
+2) 20.853 0.0 +/-  0.06 # Surface brightness at effective radius
+3) 9.5757 0.0 +/-  0.20 # Effective radius
+4) 0.18862 0.0 +/-  0.02 # Sersic index
+
+
+1) sersic @ arm # Component type
+2) 22.244 0.0 +/-  0.17 # Surface brightness at effective radius
+3) 34.296 0.0 +/-  1.15 # Effective radius
+4) 0.06 0.0 +/-  9.50 # Sersic index
+
+
+1) exponential @ disk # Component type
+2) 20.416 0.0 +/-  0.10 # Disc central SB
+3) 45.117 0.0 +/-  4.89 # Disc scalelenght
+
+# Other examples of functions already deployed:
+# I encourage people to free parameters progressively while fitting a 
+#@ brokenexp function because it is unstable (specially the alpha parameter)
+# In a first fit, let alpha=1 fixed and calculated it latter after the model is 
+# alread very close to the final solution.
+#1) brokenexp @ disk # Component type
+#2) 20.2400 1.0 +/- 0.09272 # Disc central SB
+#3) 14.0000 1.0 +/- 0.14105 # Disc inner scalelenght
+#4) 7.0000 1.0 +/- 0.26955 # Disc outer scalelenght
+#5) 45.0000 1.0 +/- 0.12678 #  Break radius
+#6) 1.0000 1.0 +/- 0.16416 # Alpha parameter
+
+
+
+
